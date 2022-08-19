@@ -56,13 +56,13 @@ export const Text = styled.div`
     -webkit-text-stroke-color: white;
     cursor: pointer;
     transition: 0.3s;
-    animation: ${vibrationSmall} 0.1s infinite alternate;
+    animation: ${vibrationSmall} 0.1s infinite alternate linear;
     ${(props) => props.hover && css`
-      animation: ${vibrationBig} 0.1s infinite alternate;
+      animation: ${vibrationBig} 0.1s infinite alternate linear;
     `}
     &:hover{
       /* animation: ${zoom} 0.5s  forwards; */
-      animation: ${vibrationBig} 0.1s infinite;
+      animation: ${vibrationBig} 0.1s infinite linear;
       font-size: 30vw;
       transform: rotate(-3deg);
       color:white;

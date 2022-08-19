@@ -11,7 +11,7 @@ export default function Home() {
     const [hover, setHover] = useState(false);
     const navigate = useNavigate();
     const click = () => {
-        navigate(`main`);
+        navigate(`landing`);
     }
     const mouseover = () => {
         setHover(!hover)

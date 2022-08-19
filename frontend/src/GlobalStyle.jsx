@@ -60,11 +60,10 @@ const GlobalStyleWrapper = createGlobalStyle`
 `;
 
 const Body = styled.div`
-  max-width: 1920px;
   margin: 0 auto;
   min-height: 100vh;
-  overflow-x: hidden;
-  background-color: #252525;
+  overflow: hidden;
+  background-color: #000;
 
 `;
 

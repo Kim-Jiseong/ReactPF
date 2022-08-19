@@ -2,6 +2,7 @@ import React, { useEffect} from "react";
 import { useMediaQuery } from "react-responsive";
 import { BrowserRouter, Routes, Route, useLocation  } from "react-router-dom";
 import Landing from "./pages/landing/index";
+import Landing2 from "./pages/landing2/index";
 import ScrollTop from "./components/ScrollTop/index";
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 // import { useRecoilState, useSetRecoilState } from "recoil";
@@ -41,6 +42,7 @@ function Router() {
          <ScrollTop />
           <Routes>
             <Route exact path="/" element={<Landing />} />
+            <Route exact path="/landing" element={<Landing2 />} />
           </Routes>
         </BrowserRouter>
     //   </CSSTransition>
